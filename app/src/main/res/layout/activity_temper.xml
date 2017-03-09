@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.guswn_000.myapplication.temperActivity">
+
+    <TextView
+        android:id="@+id/temperview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="섭씨 온도를 입력하세요." />
+    <EditText
+        android:id="@+id/tempere1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="온도를 입력하세요"
+        />
+
+    <Button
+        android:id="@+id/tempb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/temperview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <EditText
+        android:id="@+id/tempere2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="온도를 입력하세요"
+        />
+
+    <Button
+        android:id="@+id/tempb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
