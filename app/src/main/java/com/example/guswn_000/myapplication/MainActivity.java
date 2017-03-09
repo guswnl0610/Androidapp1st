@@ -42,6 +42,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(temperintent);
             }
         });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent restintent = new Intent(MainActivity.this, RestaurantActivity.class);
+                startActivity(restintent);
+            }
+        });
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent calintent = new Intent(MainActivity.this, CalActivity.class);
+                startActivity(calintent);
+            }
+        });
 
     }
 }

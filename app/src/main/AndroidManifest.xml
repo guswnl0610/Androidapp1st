@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".AgeActivity" />
-        <activity android:name=".temperActivity"></activity>
+        <activity android:name=".temperActivity" />
+        <activity android:name=".RestaurantActivity" />
+        <activity android:name=".CalActivity"></activity>
     </application>
 
 </manifest>
