@@ -23,13 +23,13 @@
         android:id="@+id/tempb1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="화씨계산" />
 
     <TextView
         android:id="@+id/temperview2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="화씨 온도를 입력하세요." />
     <EditText
         android:id="@+id/tempere2"
         android:layout_width="match_parent"
@@ -41,5 +41,5 @@
         android:id="@+id/tempb2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="섭씨계산" />
 </LinearLayout>

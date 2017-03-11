@@ -27,28 +27,84 @@ public class RestaurantActivity extends AppCompatActivity {
         t1 = (TextView)findViewById(R.id.textView10);
         t2 = (TextView)findViewById(R.id.textView11);
 
-        b1.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                String pizzacount = e1.getText().toString();
-                String pastacount = e2.getText().toString();
-                String saladcount = e3.getText().toString();
-                int totalcount = Integer.parseInt(pizzacount) + Integer.parseInt(pastacount) + Integer.parseInt(saladcount);
-                String count = totalcount +"개";
-                t1.setText(count);
-                int totalprice = Integer.parseInt(pizzacount)*15000 + Integer.parseInt(pastacount)*13000 + Integer.parseInt(saladcount)*9000;
-
-                if(cb1.isChecked())
+            public void onClick(View v)
+            {
+                if (e1.getText().toString().replace(" ","").equals("") || e2.getText().toString().replace(" ","").equals("") || e3.getText().toString().replace(" ","").equals(""))
                 {
-                    String price1 = (totalprice * 9/10) +"원";
-                    t2.setText(price1);
+                    emptytozero();
+                    calculate();
                 }
                 else
                 {
-                    String price2 = totalprice+"원";
-                    t2.setText(price2);
+                    calculate();
                 }
+
+
             }
         });
     }
+
+    public void emptytozero()
+    {
+        if(e1.getText().toString().replace(" ","").equals(""))
+        {
+            e1.setText("0");
+        }
+        if(e2.getText().toString().replace(" ","").equals(""))
+        {
+            e2.setText("0");
+        }
+        if(e3.getText().toString().replace(" ","").equals(""))
+        {
+            e3.setText("0");
+        }
+        if(e1.getText().toString().replace(" ","").equals("") && e2.getText().toString().replace(" ","").equals(""))
+        {
+            e1.setText("0");
+            e2.setText("0");
+        }
+        if (e2.getText().toString().replace(" ","").equals("") && e3.getText().toString().replace(" ","").equals(""))
+        {
+            e2.setText("0");
+            e3.setText("0");
+        }
+        if(e1.getText().toString().replace(" ","").equals("") && e3.getText().toString().replace(" ","").equals(""))
+        {
+            e1.setText("0");
+            e3.setText("0");
+        }
+        if (e1.getText().toString().replace(" ","").equals("") && e2.getText().toString().replace(" ","").equals("") && e3.getText().toString().replace(" ","").equals(""))
+        {
+            e1.setText("0");
+            e2.setText("0");
+            e3.setText("0");
+        }
+    }
+
+    public void calculate()
+    {
+
+        String pizzacount = e1.getText().toString();
+        String pastacount = e2.getText().toString();
+        String saladcount = e3.getText().toString();
+
+        int totalcount = Integer.parseInt(pizzacount) + Integer.parseInt(pastacount) + Integer.parseInt(saladcount);
+        String count = totalcount +"개";
+        t1.setText(count);
+        int totalprice = Integer.parseInt(pizzacount)*15000 + Integer.parseInt(pastacount)*13000 + Integer.parseInt(saladcount)*9000;
+        if(cb1.isChecked())
+        {
+            String price1 = (totalprice * 9/10) +"원";
+            t2.setText(price1);
+        }
+        else
+        {
+            String price2 = totalprice+"원";
+            t2.setText(price2);
+        }
+    }
+
 }

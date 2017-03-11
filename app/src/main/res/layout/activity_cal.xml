@@ -10,7 +10,7 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="숫자1 :"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -26,15 +26,19 @@
         android:layout_alignStart="@+id/textView12"
         android:layout_below="@+id/textView12"
         android:layout_marginTop="40dp"
-        android:text="TextView" />
+        android:text="숫자2 :" />
 
     <EditText
-        android:id="@+id/cale1"
+        android:id="@+id/cale2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="정수 입력"/>
+        android:hint="정수 입력"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignLeft="@+id/cale1"
+        android:layout_alignStart="@+id/cale1" />
     <EditText
-        android:id="@+id/cale2"
+        android:id="@+id/cale1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="정수 입력"
@@ -50,36 +54,36 @@
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView13"
-        android:layout_alignStart="@+id/textView13"
-        android:layout_below="@+id/textView13"
-        android:layout_marginTop="37dp"
-        android:text="더하기" />
+        android:layout_marginTop="25dp"
+        android:text="더하기"
+        android:layout_below="@+id/cale2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button4"
-        android:layout_alignRight="@+id/button4"
+        android:text="빼기"
         android:layout_below="@+id/button4"
-        android:text="Button" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
+        android:text="곱하기"
         android:layout_below="@+id/button5"
-        android:text="Button" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6"
+        android:text="나누기"
         android:layout_below="@+id/button6"
-        android:text="Button" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
