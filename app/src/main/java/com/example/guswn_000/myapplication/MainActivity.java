@@ -12,8 +12,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.setTitle("메뉴");
         b1 = (Button)findViewById(R.id.b1);
         b2 = (Button)findViewById(R.id.b2);
         b3 = (Button)findViewById(R.id.b3);

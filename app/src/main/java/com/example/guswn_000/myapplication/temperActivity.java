@@ -16,6 +16,7 @@ public class temperActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temper);
+        this.setTitle("온도변환기");
         e1 = (EditText)findViewById(R.id.tempere1);
         e2 = (EditText)findViewById(R.id.tempere2);
         b1 = (Button)findViewById(R.id.tempb1);

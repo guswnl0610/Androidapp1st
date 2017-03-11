@@ -16,6 +16,7 @@ public class AgeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_age);
+        this.setTitle("나이 계산기");
         b1 = (Button)findViewById(R.id.button2);
         b2 = (Button)findViewById(R.id.button3);
         e1 = (EditText)findViewById(R.id.agee1);

@@ -17,6 +17,7 @@ public class Main2Activity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        this.setTitle("사과 가격 계산하기");
         e1 = (EditText)findViewById(R.id.e1);
         e2 = (EditText)findViewById(R.id.e2);
         b1 = (Button)findViewById(R.id.button);

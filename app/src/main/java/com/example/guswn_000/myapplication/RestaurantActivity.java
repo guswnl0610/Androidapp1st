@@ -19,6 +19,7 @@ public class RestaurantActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant);
+        this.setTitle("레스토랑 메뉴 주문");
         e1 = (EditText)findViewById(R.id.reste1);
         e2 = (EditText)findViewById(R.id.reste2);
         e3 = (EditText)findViewById(R.id.reste3);

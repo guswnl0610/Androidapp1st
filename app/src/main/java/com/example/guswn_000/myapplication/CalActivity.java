@@ -15,6 +15,7 @@ public class CalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cal);
+        this.setTitle("계산기");
         n1 = (EditText)findViewById(R.id.cale1);
         n2 = (EditText)findViewById(R.id.cale2);
         b1 = (Button)findViewById(R.id.button4);
