@@ -91,8 +91,8 @@ public class CalActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    double num1 = Integer.parseInt(n1.getText().toString());
-                    double num2 = Integer.parseInt(n2.getText().toString());
+                    double num1 = Double.parseDouble(n1.getText().toString());
+                    double num2 = Double.parseDouble(n2.getText().toString());
                     double divideres;
                     if(num1 >= num2)
                     {

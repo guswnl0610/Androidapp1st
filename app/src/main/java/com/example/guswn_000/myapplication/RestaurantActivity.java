@@ -87,7 +87,6 @@ public class RestaurantActivity extends AppCompatActivity {
 
     public void calculate()
     {
-
         String pizzacount = e1.getText().toString();
         String pastacount = e2.getText().toString();
         String saladcount = e3.getText().toString();
